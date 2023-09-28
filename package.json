@@ -15,6 +15,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@corbado/webcomponent": "^1.0.49"
+		"@corbado/webcomponent": "^1.0.67",
+		"svelte-preprocess": "^5.0.4"
 	}
 }
