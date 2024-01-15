@@ -1,6 +1,8 @@
-# Svelte Passkeys Example with Corbado
+# Svelte Passkey-First Authentication Example with Corbado
 
 This is a sample implementation of the Corbado web component being integrated into a web application built with Svelte.
+
+Please see the [full blog post](https://www.corbado.com/blog/svelte-passkeys) to understand the detailed steps needed to integrate passkeys into Svelte apps.
 
 ## File structure
 
