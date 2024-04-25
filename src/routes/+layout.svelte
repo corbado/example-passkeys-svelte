@@ -6,7 +6,6 @@
     let isInitialized = false;
     onMount(async () => {
         await Corbado.load({
-            //@ts-ignore
             projectId: PROJECT_ID,
             darkMode: 'off'
         });
