@@ -1,8 +1,9 @@
 <script lang="ts">
     import Corbado from "@corbado/web-js";
+    import type {SessionUser} from "@corbado/types";
     import {onMount} from "svelte";
 
-    let user: any;
+    let user: SessionUser | undefined;
 
     onMount(() => {
         user = Corbado.user
