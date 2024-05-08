@@ -1,17 +1,15 @@
-<script>
-    import {PUBLIC_CORBADO_PROJECT_ID} from '$env/static/public';
+<script lang="ts">
+    import Corbado from '@corbado/web-js';
+    import {onMount} from 'svelte';
 
-    import '@corbado/webcomponent/pkg/auth_cui.css'
-    import '@corbado/webcomponent'
+    let authElement: HTMLDivElement;
+
+    onMount(() => {
+        Corbado.mountAuthUI(
+            authElement, {
+                onLoggedIn: () => window.location.href = "/profile",
+            })
+    })
 </script>
-<corbado-auth
-        project-id={PUBLIC_CORBADO_PROJECT_ID}
-        conditional="yes"
->
-    <input
-            name="username"
-            id="corbado-username"
-            required
-            autocomplete="webauthn"
-    />
-</corbado-auth>
+
+<div bind:this={authElement}></div>
